@@ -15,8 +15,8 @@ public class Main {
 
         System.out.println(phones[0].getPrice() + " " + phones[1].getPrice() + " " + phones[2].getPrice());
 
-        BubbleSort bs = new BubbleSort();
-        bs.sort(phones, true);
+        QuickSort bs = new QuickSort();
+        bs.sort(phones, false);
 
         System.out.println(phones[0].getPrice() + " " + phones[1].getPrice() + " " + phones[2].getPrice());
     }
