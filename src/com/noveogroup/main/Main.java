@@ -8,16 +8,16 @@ public class Main {
     public static void main(String[] args) {
         //You can check your algorithms here.
 
-        Phone[] phones = new Phone[3];
-        phones[0] = new Phone(10);
-        phones[1] = new Phone(2);
-        phones[2] = new Phone(5);
+        Device[] devices = new Device[3];
+        devices[0] = new Phone(25);
+        devices[1] = new Tablet(15);
+        devices[2] = new Notebook(50);
 
-        System.out.println(phones[0].getPrice() + " " + phones[1].getPrice() + " " + phones[2].getPrice());
+        System.out.println(devices[0].getPrice() + " " + devices[1].getPrice() + " " + devices[2].getPrice());
 
         QuickSort bs = new QuickSort();
-        bs.sort(phones, false);
+        bs.sort(devices, true);
 
-        System.out.println(phones[0].getPrice() + " " + phones[1].getPrice() + " " + phones[2].getPrice());
+        System.out.println(devices[0].getPrice() + " " + devices[1].getPrice() + " " + devices[2].getPrice());
     }
 }
