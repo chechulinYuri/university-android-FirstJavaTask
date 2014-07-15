@@ -13,7 +13,7 @@ public abstract class AbstractDevice implements Device {
 
     @Override
     public int compareTo(Device device) {
-        return device.getPrice() - this.getPrice();
+        return this.getPrice() - device.getPrice();
     }
 
     public int getPrice() {
