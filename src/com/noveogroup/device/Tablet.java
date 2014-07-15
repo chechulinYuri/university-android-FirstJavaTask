@@ -3,10 +3,9 @@ package com.noveogroup.device;
 /**
  * Created by Admin on 15.07.14.
  */
-public class DeviceClass extends AbstractDevice {
+public class Tablet extends AbstractDevice {
 
-    public DeviceClass(int pr) {
+    public Tablet(int pr) {
         super(pr);
     }
-
 }

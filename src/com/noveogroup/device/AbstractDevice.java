@@ -5,4 +5,18 @@ package com.noveogroup.device;
  */
 public abstract class AbstractDevice implements Device {
 
+    private int price;
+
+    public AbstractDevice(int pr) {
+        price = pr;
+    }
+
+    @Override
+    public int compareTo(Device device) {
+        return device.getPrice() - this.getPrice();
+    }
+
+    public int getPrice() {
+        return price;
+    }
 }
