@@ -16,10 +16,6 @@ public class QuickSort extends AbstractAlgorithm {
         number = devices.length;
         asc = ascendingSort;
         quicksort(0, number - 1);
-
-        for (int i = 0; i < devices.length; i++) {
-            devices[i] = numbers[i];
-        }
     }
 
     private void quicksort(int low, int high) {
